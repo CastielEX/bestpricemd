@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /*Background*/
+  background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.home {
+  color: #085dad;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+.home-text {
+  font-size: 18px; 
+  color: white; 
+  float: left; 
+  font-weight: 400;
+}
+
+.home-text-list {
+  font-size: 14px; 
+  color: ghsla(0,0%,100%,.65);
+  float: left; 
+  font-weight: 400;
+  margin: 0 20px;
+  transition: color .3s;
+}
+
+.home-text-list:hover {
+  color: white;
+}
+
+.layout-header {
+    height: 64px;
+    padding: 0 50px;
+    color: #fff;
+    line-height: 64px;
+    background: #141E30;
+}
+
+.header-list {
+  /* display: flex; */
+  color: hsla(0,0%,100%,.65);
+  background: #141E30;
+  line-height: inherit;
+}
+
+.user-logo {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+}
+
+.user-name {
+  font-size: 14px; 
+  color: white; 
+  font-weight: 400;
+  background-color: #141E30;
+  margin: 0 15px;
+
+}
+
+.layout-footer {
+  height: 84px;
+  color: #fff;
+  line-height: 64px;
+  background: #141E30;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.main-layout {
+  padding: 50px;
+  min-height: calc(100vh - 64px);
+  box-sizing: border-box;
+  display: flex;
+  flex: auto;
+  justify-content: center;
+}
+
+.fortex-logo {
+  height: 25em;
+  margin: -100px 0;
+}
+
+.home-welcome-h1 {
+  font-size: 32px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+}
+
